@@ -27,15 +27,31 @@
     <modules>
         <module>magic-box-generator</module>
         <module>magic-box-jar</module>
+        <module>magic-box-common</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Magic -->
+            <dependency>
+                <groupId>dev.drf.magic.box</groupId>
+                <artifactId>magic-box-generator</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.drf.magic.box</groupId>
+                <artifactId>magic-box-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Kotlin -->
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-stdlib</artifactId>
                 <version>${kotlin.version}</version>
             </dependency>
+
+            <!-- Other -->
         </dependencies>
     </dependencyManagement>
 

@@ -10,21 +10,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>magic-box-jar</artifactId>
+    <artifactId>magic-box-common</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- Magic -->
-        <dependency>
-            <groupId>dev.drf.magic.box</groupId>
-            <artifactId>magic-box-generator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>dev.drf.magic.box</groupId>
-            <artifactId>magic-box-common</artifactId>
-        </dependency>
-
-        <!-- Kotlin -->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
