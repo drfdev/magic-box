@@ -28,6 +28,7 @@
         <module>magic-box-generator</module>
         <module>magic-box-jar</module>
         <module>magic-box-common</module>
+        <module>magic-box-elements</module>
     </modules>
 
     <dependencyManagement>
@@ -41,6 +42,11 @@
             <dependency>
                 <groupId>dev.drf.magic.box</groupId>
                 <artifactId>magic-box-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.drf.magic.box</groupId>
+                <artifactId>magic-box-elements</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
