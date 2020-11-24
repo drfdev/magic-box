@@ -23,17 +23,27 @@ enum class SecondaryElementType(
     VITALITY(ElementType.WATER, ElementType.WILL),
 
     /* Wind block */
-    HURRICANE(ElementType.WIND, ElementType.WIND)
+    HURRICANE(ElementType.WIND, ElementType.WIND),
+    SAND(ElementType.WIND, ElementType.EARTH),
+    STORM(ElementType.WIND, ElementType.ELECTRIC),
+    DARK_WIND(ElementType.WIND, ElementType.DARK),
+    BREEZE(ElementType.WIND, ElementType.HOLY),
+    STRONG_WIND(ElementType.WIND, ElementType.WILL),
 
     /* Earth block */
+    ROCK(ElementType.EARTH, ElementType.EARTH),
 
     /* Electric block */
+    SHOCK(ElementType.ELECTRIC, ElementType.ELECTRIC),
 
     /* Dark block */
+    DARKNESS(ElementType.DARK, ElementType.DARK),
 
     /* Holy block */
+    SHINE(ElementType.HOLY, ElementType.HOLY),
 
     /* Will block */
+    STRONG_WILL(ElementType.WILL, ElementType.WILL)
 
     // TODO add other combination + test
 }
