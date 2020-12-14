@@ -32,15 +32,23 @@ enum class SecondaryElementType(
 
     /* Earth block */
     ROCK(ElementType.EARTH, ElementType.EARTH),
+    DARK_STONE(ElementType.EARTH, ElementType.DARK),
+    HOLY_STONE(ElementType.EARTH, ElementType.HOLY),
+    WALL(ElementType.EARTH, ElementType.WILL),
 
     /* Electric block */
     SHOCK(ElementType.ELECTRIC, ElementType.ELECTRIC),
+    DARK_LIGHTNING(ElementType.ELECTRIC, ElementType.DARK),
+    ENERGY(ElementType.ELECTRIC, ElementType.HOLY),
+    POWER(ElementType.ELECTRIC, ElementType.WILL),
 
     /* Dark block */
     DARKNESS(ElementType.DARK, ElementType.DARK),
+    STRONG_DARK(ElementType.DARK, ElementType.WILL),
 
     /* Holy block */
     SHINE(ElementType.HOLY, ElementType.HOLY),
+    HOPE(ElementType.HOLY, ElementType.WILL),
 
     /* Will block */
     STRONG_WILL(ElementType.WILL, ElementType.WILL)
