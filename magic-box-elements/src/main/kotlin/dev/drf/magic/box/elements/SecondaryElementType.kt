@@ -52,6 +52,4 @@ enum class SecondaryElementType(
 
     /* Will block */
     STRONG_WILL(ElementType.WILL, ElementType.WILL)
-
-    // TODO add other combination + test
 }
