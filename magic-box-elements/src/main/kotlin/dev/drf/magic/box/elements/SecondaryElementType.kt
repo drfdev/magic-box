@@ -1,8 +1,11 @@
 package dev.drf.magic.box.elements
 
+import dev.drf.magic.box.common.SymmetricPair
+
 enum class SecondaryElementType(
-        val first: ElementType,
-        val second: ElementType) {
+    val first: ElementType,
+    val second: ElementType
+) {
 
     /* Fire block */
     DRAGON_FIRE(ElementType.FIRE, ElementType.FIRE),
@@ -53,3 +56,9 @@ enum class SecondaryElementType(
     /* Will block */
     STRONG_WILL(ElementType.WILL, ElementType.WILL)
 }
+
+val SECONDARY_ELEMENT_CACHE: Map<SymmetricPair<ElementType>, SecondaryElementType> = SecondaryElementType.values()
+    .map {
+        SymmetricPair(it.first, it.second) to it
+    }
+    .toMap()
